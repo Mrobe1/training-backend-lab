@@ -19,7 +19,7 @@ resource "aws_s3_bucket_versioning" "version_my_bucket" {
   }
 }
 resource "aws_dynamodb_table" "terraform_lock_tbl" {
-  name           = "terraform-lock"
+  name           = "terraform_lock_tbl"
   read_capacity  = 1
   write_capacity = 1
   hash_key       = "LockID"
